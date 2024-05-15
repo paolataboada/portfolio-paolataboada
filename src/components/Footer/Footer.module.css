@@ -5,7 +5,9 @@
 }
 
 .footer__line {
+    min-width: 100px;
     flex-grow: 1;
+    border: 1px solid #000;
 }
 
 .footer__text {

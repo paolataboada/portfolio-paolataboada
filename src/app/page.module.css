@@ -1,15 +1,16 @@
 .main {
-    overflow: auto;
 	padding: 2.5rem;
     padding-bottom: 0;
     flex-grow: 1;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main__greeting {
     font-size: 14px;
+    font-weight: 500;
     padding: 1rem 0;
 }
 
@@ -43,10 +44,19 @@
     font-weight: 600;
 }
 
+.main__wrapper_emoji {
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.main__wrapper_emoji img {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
 .main__wrapper_download {
     padding-top: 1rem;
     margin-top: auto;
-    text-align: center;
 }
 
 .main__btn_download {
@@ -54,5 +64,23 @@
     border: none;
     font-size: 12px;
     font-weight: 600;
+    text-wrap: nowrap;
     cursor: pointer;
+}
+
+@media (min-width: 980px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .main__wrapper_content {
+        padding-inline: 2rem;
+        max-width: 700px;
+    }
+
+    .main__wrapper_download {
+        margin-top: initial;
+        transform: rotate(-90deg);
+    }
 }

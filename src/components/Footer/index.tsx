@@ -14,14 +14,7 @@ const Footer = () => {
 				height={10}
 				priority
 			/>
-			<Image
-				src="/line__footer.svg"
-				alt="Línea"
-				width={150}
-				height={5}
-				priority
-				className={styles.footer__line}
-			/>
+			<hr className={styles.footer__line} />
 			<span
 				className={`${styles.footer__text} ${jetbrains_mono.className}`}
 			>
