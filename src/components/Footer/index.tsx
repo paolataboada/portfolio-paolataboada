@@ -17,10 +17,10 @@ const Footer = () => {
 			<Image
 				src="/line__footer.svg"
 				alt="Línea"
-				width={200}
+				width={150}
 				height={5}
 				priority
-				className={styles.line__footer}
+				className={styles.footer__line}
 			/>
 			<span
 				className={`${styles.footer__text} ${jetbrains_mono.className}`}
