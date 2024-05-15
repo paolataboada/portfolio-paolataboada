@@ -1,0 +1,25 @@
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+.header__btn__primary {
+    display: inline-block;
+    background-color: #D9D9D9;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0;
+    color: #000;
+    padding: 8px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header__btn__menu {
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    line-height: 0;
+    cursor: pointer;
+}

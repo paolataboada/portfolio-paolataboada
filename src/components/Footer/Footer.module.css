@@ -1,0 +1,14 @@
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.line__footer {
+    flex-grow: 1;
+}
+
+.footer__text {
+    padding-left: 0.5rem;
+    font-size: 12px;
+}
