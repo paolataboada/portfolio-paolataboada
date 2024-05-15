@@ -42,11 +42,13 @@ export default function Home() {
 				/>
 			</div>
 			<div className={styles.main__wrapper_download}>
-				<button
-					className={`${styles.main__btn_download} ${inter.className}`}
-				>
-					DESCARGAR CV
-				</button>
+				<a href="/CV-PAOLA-TABOADA-FED.pdf" download>
+					<button
+						className={`${styles.main__btn_download} ${inter.className}`}
+					>
+						DESCARGAR CV
+					</button>
+				</a>
 			</div>
 		</main>
 	);
