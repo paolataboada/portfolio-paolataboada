@@ -33,10 +33,10 @@
 }
 
 .main__education_period {
-    margin: 1rem;
-    margin-top: 0;
+    margin-inline: auto;
+    margin-bottom: 1rem;
     font-weight: 900;
-    font-size: 48px;
+    font-size: 45px;
     color: #D9D9D9;
     text-shadow:
         -1px -1px 0 rgba(0, 0, 0, 0.5),
@@ -46,7 +46,7 @@
 }
 
 .main__educational_institute {
-    padding: 0.75rem 0;
+    padding: 1rem 0;
     font-size: 13px;
 }
 
@@ -69,12 +69,13 @@
         max-width: 50%;
         width: 500px;
     }
-
-    .main__education_period {
-        font-size: 60px;
-    }
     
     .main__title_section {
         margin-top: 2rem;
+    }
+
+    .main__education_period {
+        font-size: calc(2rem + 2.5vw);
+        margin: 1rem 0;
     }
 }
