@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Portafolio Paola Taboada",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="es">
-			<body className={inter.className}>
+			<body className={montserrat.className}>
 				<Header />
 				{children}
 				<Footer />

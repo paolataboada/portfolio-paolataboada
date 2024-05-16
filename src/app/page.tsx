@@ -1,13 +1,12 @@
-import { Inter, Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 import styles from "./page.module.css";
 import Image from "next/image";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
 	return (
-		<main className={`${styles.main} ${montserrat.className}`}>
+		<main className={styles.main}>
 			<div className={styles.main__wrapper_content}>
 				<div className={styles.main__greeting}>
 					<p>HOLA!!!</p>
