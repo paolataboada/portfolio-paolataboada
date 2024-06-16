@@ -112,7 +112,6 @@
     .main__workplace > p {
         grid-column: span 2;
         text-align: end;
-        /* margin: 1rem 0; */
         line-height: 1.5rem;
         padding: 1.5rem;
     }
