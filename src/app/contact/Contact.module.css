@@ -1,0 +1,122 @@
+.main {
+    padding: 1rem 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.main__title_section {
+    text-align: center;
+}
+
+.main__title_section>p {
+    font-size: 2.25rem;
+    font-weight: 800;
+    padding: 0.5rem;
+}
+
+.main__title_section>span {
+    font-weight: 600;
+    padding: 0.5rem;
+    display: block;
+}
+
+.main__contact_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    flex-grow: 1;
+}
+
+.main__contact_item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    min-height: 95px;
+    width: 350px;
+}
+
+.main__contact_item>img {
+    transition: transform 0.3s ease;
+}
+
+.main__contact_item>img:hover {
+    transform: translateY(10px);
+}
+
+.contact__item_info>p {
+    font-weight: 600;
+    padding-bottom: 0.5rem;
+}
+
+.contact__item_info>*:last-child {
+    font-size: 0.9rem;
+}
+
+.contact__item_info>a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.footer__line {
+    min-width: 100px;
+    flex-grow: 1;
+    border: 1px solid #000;
+}
+
+.footer__text {
+    padding-left: 0.5rem;
+    font-size: 12px;
+}
+
+.footer__fullname {
+    padding-inline: 2rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: #D9D9D9;
+    text-shadow:
+        -1px -1px 0 rgba(0, 0, 0, 0.5),
+        1px -1px 0 rgba(0, 0, 0, 0.5),
+        -1px 1px 0 rgba(0, 0, 0, 0.5),
+        1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 850px) {
+    .main__contact_items {
+        flex-direction: initial;
+        justify-content: center;
+        flex-grow: initial;
+    }
+
+    .main__contact_item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 250px;
+        gap: 2rem;
+    }
+
+    .main__contact_item>img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .footer__fullname {
+        font-size: 4vw;
+    }
+}
