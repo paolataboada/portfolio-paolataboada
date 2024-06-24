@@ -40,7 +40,6 @@
 
 .main__project {
     width: 90%;
-    min-width: 300px;
     margin-inline: auto;
     padding: 0.5rem 0;
     text-align: center;
@@ -52,18 +51,22 @@
     padding-top: 0.5rem;
 }
 
-.main__project>p:last-child {
+.main__project>.main__project_description {
     font-size: 13px;
     font-weight: initial;
     line-height: 1.25rem;
 }
 
-.main__project_view {
-    height: 200px;
-    width: 100%;
-    background-color: #D9D9D9;
+.main__project>.main__project_tools {
+    font-size: 12.5px;
+    font-weight: 500;
+    padding-bottom: 1rem;
 }
 
+.main__project_view {
+    max-height: 230px;
+    max-width: 100%;
+}
 
 @media (min-width: 850px) {
     .main {
@@ -95,51 +98,88 @@
         align-self: initial;
     }
 
-    .main__wrapper_project {
-        grid-column: span 6;
-
-        display: flex;
-        gap: 1.5rem;
-        overflow: hidden;
-        align-items: flex-end;
-        min-height: 400px;
-
+    .main__wrapper_carousel {
         position: relative;
-        margin: 2rem 0;
+        margin: auto;
+        overflow: hidden;
+        width: 100%;
+        grid-column: span 6;
     }
 
-    .main__wrapper_project>.main__project:nth-child(even) {
+    .main__carousel_content>.main__carousel_slide:nth-child(even) {
         align-self: flex-start;
     }
-    
-    .main__wrapper_project::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 5%;
-        height: 100%;
-        background: linear-gradient(to right, transparent, rgb(133 155 171));
-        pointer-events: none;
+
+    .main__carousel_content {
+        display: flex;
+        transition: transform 0.5s ease;
+        will-change: transform;
+        align-items: flex-end;
+        min-height: 450px;
     }
-    
-    .main__wrapper_project::after {
-        content: "";
+
+    .main__carousel_slide {
+        box-sizing: border-box;
+        transition: transform 0.5s ease;
+        min-width: 25%;
+        height: auto;
+        padding: 0 0.75rem;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .carousel__project_view {
+        height: auto;
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .main__carousel_slide>p {
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 0.5rem;
+    }
+
+    .main__carousel_slide>.carousel__project_description {
+        font-size: 13px;
+        font-weight: initial;
+        line-height: 1.25rem;
+    }
+
+    .main__carousel_slide>.carousel__project_tools {
+        font-size: 12.5px;
+        font-weight: 500;
+        padding-bottom: 1rem;
+    }
+
+    .main__carousel_button {
         position: absolute;
-        right: 0;
-        top: 30%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 1;
         width: 70px;
         height: 70px;
         border-radius: 50%;
         border: 1.5px solid #404040;
-        background-color: rgba(0, 0, 0, 0.05);
-        background-image: url('/right-arrow.svg');
+        background-color: rgba(255, 255, 255, 0.5);
+        background-image: url("/right-arrow.svg");
         background-position: center;
         background-repeat: no-repeat;
         cursor: pointer;
     }
 
-    .main__project { 
-        padding: 0;
+    .carousel__prev_button {
+        left: 10px;
+        transform: rotate(180deg) translateY(-50%);
+        transform-origin: top;
+    }
+
+    .carousel__next_button {
+        right: 10px;
     }
 }
