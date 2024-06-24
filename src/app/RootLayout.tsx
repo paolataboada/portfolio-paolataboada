@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
-import { inter } from "./layout";
+import { Inter } from "next/font/google";
+
+export const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
 	children,

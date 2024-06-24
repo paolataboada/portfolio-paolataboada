@@ -60,6 +60,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.15);
     text-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.2s ease-in;
 }
 
 .main__skills_box>div.javascript {
@@ -100,6 +101,46 @@
 .main__skills_box>div.git {
     color: #2D2D2D;
     border: 2px solid #2D2D2D;
+}
+
+.main__skills_box>div.javascript:hover {
+    background-color: #F7DF1E;
+    color: initial;
+}
+
+.main__skills_box>div.html:hover {
+    background-color: #EF642A;
+    color: initial;
+}
+
+.main__skills_box>div.css:hover {
+    background-color: #0170BA;
+    color: initial;
+}
+
+.main__skills_box>div.react:hover {
+    background-color: #00D8FF;
+    color: initial;
+}
+
+.main__skills_box>div.angular:hover {
+    background-color: #C3002F;
+    color: initial;
+}
+
+.main__skills_box>div.nodejs:hover {
+    background-color: #80BD00;
+    color: initial;
+}
+
+.main__skills_box>div.nextjs:hover {
+    background-color: #fff;
+    color: initial;
+}
+
+.main__skills_box>div.git:hover {
+    background-color: #2D2D2D;
+    color: #FFF;
 }
 
 @media (min-width: 850px) {
